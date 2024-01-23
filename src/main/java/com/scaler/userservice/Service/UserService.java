@@ -1,19 +1,35 @@
 package com.scaler.userservice.Service;
 
 import com.scaler.userservice.Models.User;
+import org.springframework.stereotype.Service;
 
-import java.util.List;
 
-public interface UserService {
 
-    User getAllUsers();
+@Service
+public class UserService implements ServiceInterface {
 
-    List<User> getSingleUser(Long id);
+    @Override
+    public User getAllUsers() {
+        return null;
+    }
 
-    User addUser(User user);
+    @Override
+    public User getSingleUser(Long id) {
+        return null;
+    }
 
-    User updateUser(User id,User user);
+    @Override
+    public User createUser(User user) {
+        return null;
+    }
 
-    void deleteUser(Long id);
+    @Override
+    public User updateUser(Long id, User user) {
+        return null;
+    }
 
+    @Override
+    public User deleteUser(Long id) {
+        return null;
+    }
 }
