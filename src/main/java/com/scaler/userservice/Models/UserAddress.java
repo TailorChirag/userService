@@ -1,5 +1,6 @@
 package com.scaler.userservice.Models;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToOne;
 import lombok.Getter;
@@ -14,7 +15,7 @@ public class UserAddress extends BaseModel{
         private String street;
         private String number;
         private String zipcode;
-        @ManyToOne
+        @ManyToOne(cascade = {CascadeType.PERSIST,CascadeType.MERGE})
         private UserAddressGeo geo;
 
 }

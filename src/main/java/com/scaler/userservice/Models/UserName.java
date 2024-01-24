@@ -9,6 +9,6 @@ import lombok.Setter;
 @Entity
 public class UserName extends BaseModel{
 
-    private String first;
-    private String last;
+    private String firstName;
+    private String lastName;
 }

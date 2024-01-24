@@ -9,6 +9,6 @@ import lombok.Setter;
 @Entity
 public class UserAddressGeo extends BaseModel{
 
-    private String lat;
-    private String lng;
+    private String latitude;
+    private String longitude;
 }

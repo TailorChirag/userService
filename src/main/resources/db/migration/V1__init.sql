@@ -31,9 +31,9 @@ CREATE TABLE user_address_geo
 
 CREATE TABLE user_name
 (
-    id    BIGINT AUTO_INCREMENT NOT NULL,
-    first VARCHAR(255)          NULL,
-    last  VARCHAR(255)          NULL,
+    id         BIGINT AUTO_INCREMENT NOT NULL,
+    first_name VARCHAR(255)          NULL,
+    last_name  VARCHAR(255)          NULL,
     CONSTRAINT pk_username PRIMARY KEY (id)
 );
 

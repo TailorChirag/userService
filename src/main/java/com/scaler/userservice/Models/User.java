@@ -1,5 +1,6 @@
 package com.scaler.userservice.Models;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToOne;
 import lombok.Getter;
@@ -13,9 +14,9 @@ public class User extends BaseModel{
     private String email;
     private String username;
     private String password;
-    @OneToOne
+    @OneToOne(cascade = {CascadeType.PERSIST,CascadeType.MERGE})
     private UserName name;
-    @OneToOne
+    @OneToOne(cascade = {CascadeType.PERSIST,CascadeType.MERGE})
     private UserAddress address;
     private String phone;
 
